@@ -318,6 +318,7 @@ section {
 
 #experience {
   position: relative;
+  top: 200px;
 }
 
 .experience-sub-title {
@@ -346,7 +347,7 @@ article {
   display: flex;
   width: 10rem;
   justify-content: space-around;
-  gap: 0.5rem;
+  gap: 3.5rem;
 }
 
 article .icon {
@@ -357,6 +358,49 @@ article .icon {
 
 #projects {
   position: relative;
+  top: 200px;
+ }
+
+ .details-container.color-container {
+   margin-bottom: 20px; /* Add space below the container */
+ }
+
+ .details-container.color-container h3,
+ .details-container.color-container h4,
+ .details-container.color-container p,
+ .details-container.color-container .btn-container {
+   margin-bottom: 10px; /* Add space below each element */
+ }
+
+ .experience-sub-title {
+   color: rgb(85, 85, 85);
+   font-weight: bold; /* Make the text bold */
+   font-size: 1.75rem;
+   margin-bottom: 2rem;
+ }
+
+ .article-container {
+   margin: 1rem;
+   color: black;
+   font-weight: bold; /* Make the text bold */
+ }
+
+.experience-details-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.about-containers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.details-container.color-container {
+  flex: 1 1 calc(33.333% - 1rem); /* 3 boxes in a row */
+  box-sizing: border-box;
 }
 
 .color-container {
@@ -380,13 +424,28 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
+@media (max-width: 1200px) {
+  .details-container.color-container {
+    flex: 1 1 calc(50% - 1rem); /* 2 boxes in a row on smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .details-container.color-container {
+    flex: 1 1 100%; /* 1 box in a row on small screens */
+  }
+}
+
+
 /* CONTACT */
 
 #contact {
+  position: relative;
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  margin-bottom: 0; /* Ensure there's no bottom margin */
+  padding-bottom: 0; /* Ensure there's no bottom padding */
+  top: 200px;
 }
 
 .contact-info-upper-container {
@@ -396,8 +455,8 @@ article .icon {
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
-  background: (250, 250, 250);
-  margin: 2rem auto;
+  background: rgb(250, 250, 250); /* Fix the background property */
+  margin: 2rem auto 1rem auto; /* Reduce bottom margin */
   padding: 0.5rem;
 }
 
@@ -426,6 +485,7 @@ article .icon {
 footer {
   height: 26vh;
   margin: 0 1rem;
+  padding-top: 0;
 }
 
 footer p {
