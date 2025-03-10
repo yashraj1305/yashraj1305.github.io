@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Yashraj Bharambe Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #cec9be;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Yashraj Bharambe</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.jpg);">
+					
+				
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Yashraj Bharambe</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Software Dev  ',
+						
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+
+			            <p><a href="https://www.linkedin.com/in/yashrajbharambe/" class="btn btn-primary py-3 px-4">LinkedIn</a> 
+							<a href="Yashraj_Resume_Software.pdf"  class="btn btn-white btn-outline-white py-3 px-4">Download CV</a>-->
+					    </p>
+					
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+  <div class="col-sm-6 col-md-12">
+    <div class="about-info">
+      <p><span class="title-s">Name: </span> <span>Yashraj Bharambe</span></p>
+      <!-- <p><span class="title-s">Job Role: </span> <span>Software Dev</span></p> -->
+      <p><span class="title-s">Address: </span> <span>Arizona, United States of America</span></p>
+    </div>
+
+	<ul class="about-info mt-4 px-md-0 px-2">
+		<li class="d-flex"><span>Profile:</span> <span>Software Developer, Data &amp; Analytics</span></li>
+		<li class="d-flex"><span>Education:</span> <span>Masters in Computer Science</span></li>
+		<li class="d-flex"><span>Language:</span><span>Python(NumPy, Pandas, Matplotlib, TensorFlow), C++, Java</span></li>
+		<li class="d-flex"><span>Database:</span>   <span>  MySQL, MongoDB</span></li>
+		<li class="d-flex"><span>Web Technologies:</span> <span>HTML, CSS, JavaScript, React, Node.js, Bootstrap</span></li>
+		<li class="d-flex"><span>Cloud:</span> <span> AWS, EC2, Lambda, S3, Auto Scaling</span></li>
+		<li class="d-flex"><span>Frameworks:</span> <span> Spring Boot, Spring MVC</span></li>
+		<li class="d-flex"><span>Tools:</span> <span>Git/GitHub, MongoDB, MySQL, Jupyter, R Studio, Visual Studio</span></li>
+		<!-- <li class="d-flex"><span>Additional Skills:</span> <span>Git Version Control, Google Cloud Platform (GCP), Microsoft Azure, API Integration, Process Improvement,E-commerce, SAP, A/B Testing,Data Analytics, Google Analytics,
+				Git, JIRA, Agile , Google Analytics , SEO</span></li>
+		<li class="d-flex"><span> Certifications:</span> <span>Microsoft - Data Analysis, Project Management and Generative AI , Machine learning</span></li> -->
+		
+		
+	</ul>
+  </div>
+</div>
+
+
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>Hello! I'm Yashraj Bharambe, a Master of Science in Computer Science candidate at Arizona State University, with a strong foundation in building scalable enterprise applications and cloud-based solutions. My journey through software engineering is characterized by a drive for optimization, a focus on delivering impactful results, and a passion for leveraging cutting-edge technologies.</p>
+								<p>During my studies and professional experiences, I've honed my skills in Java, Spring Boot, React, and AWS, consistently delivering quantifiable improvements. At Capgemini, I reduced API response times by 20% through caching and database optimization, and increased system scalability by 25% using Spring's dependency injection. My projects at ASU further demonstrate my ability to build robust systems, such as a scalable image recognition system on AWS that handled over 10,000 image requests and achieved 500 requests per second.</p>
+								<p>My data science internship at REG-ex Software Services allowed me to apply machine learning techniques, achieving 95% accuracy in a CNN-based classification system and boosting data processing efficiency by 20% through parallelization. I've also developed a video face recognition service using AWS Lambda, demonstrating my proficiency in serverless architecture and real-time processing.</p>
+								<p>With a strong skill set in Python, C++, Java, SQL, and various web technologies and cloud platforms, I am passionate about building efficient and scalable solutions. I am eager to contribute my expertise to a challenging software engineering role where I can leverage my skills to drive innovation and deliver impactful results. Let's connect and explore how we can build cutting-edge solutions together.</p>
+							</div>
+						</div>
+
+
+						
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate" style="width: 500px; height: 700px;">
+						<span class="date">January 2023 - May 2023 </span>
+						<h2>Full Stack Software Engineer</h2>
+						<span class="position">Capgemini </span>
+						<p class="mt-4"> 
+							<ul>
+								<li>Reduced API response times by 20% through the integration of caching mechanisms (Redis) and refining database
+									queries with indexing and query refactoring.</li>
+								<li>Increased system scalability by 25% by utilizing Spring’s Dependency Injection and Inversion of Control (IoC) to
+									decouple components, facilitating easier scaling and maintenance.</li>	
+								<li>Minimized downtime by 30% by deploying automated monitoring and alerting tools to identify and address performance
+									bottlenecks.</li>
+								<li>Tech Stack: Spring Boot, Spring MVC, RESTful APIs, Java, MySQL, Git.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate" style="width: 500px; height: 700px;">
+						<span class="date">July 2021 - October 2021</span>
+						<h2>Junior Data Scientist </h2>
+						<span class="position">REG-ex Software Services</span>
+						<p class="mt-4">
+							<ul>
+								<li>Boosted data processing efficiency by 20% by parallelizing data preprocessing tasks with Python’s multiprocessing
+									library and refining algorithms for faster execution.</li>
+								<li>Attained 95% accuracy in a CNN-based classification system by adjusting hyperparameters, expanding the dataset to
+									reduce overfitting, and employing transfer learning with a pre-trained ResNet model.</li>
+								<li>Partnered with diverse teams to integrate machine learning solutions into production environments.</li>
+								<li>Tech Stack: Python, TensorFlow, Keras, Pandas, NumPy, Scikit-learn, Jupyter.</li>
+
+								
+								
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+    <!-- <div class="resume-wrap ftco-animate mx-auto" style="width: 515px; height: 800px;">
+        <span class="date">May 2020 - April 2021 </span>
+        <h2>Data Analyst </h2>
+        <span class="position">CalTech IT Solution</span>
+        <p class="mt-4">
+            <ul>
+                <li>Built an SSIS ETL pipeline with SSRS integration, reducing data processing time by 50% and enhancing efficiency by 20%</li>
+                <li>Analyzed data in Power BI, creating data visualizations and reports that highlighted KPIs and trends for improved business strategy</li>
+                <li>Engineered automated web scraping scripts using Python libraries (BeautifulSoup, Scrapy) to collect data from websites,reducing manual data entry by 90% and improving data accuracy</li>
+		<li> Amplified marketing efficiency by 25% for an E-commerce social media client by analyzing 100,000+ posts using SQL and Excel; delivered KPIs and ad-hoc reports for strategic decisions</li>
+            </ul>
+        </p>
+    </div> -->
+</div>
+
+
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate" style="width: 500px; height: 270px;">
+    					<span class="date">2023-2025</span>
+    					<h2>Masters in Computer Science</h2>
+    					<span class="position"> Arizona State University, USA</span>
+    					
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate" style="width: 500px; height: 270px;">
+    					<span class="date">2019-2023</span>
+    					<h2>Bachelors in Information Technology</h2>
+    					<span class="position">Savitribai Phule Pune university, India </span>
+    					
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="Yashraj_Resume_Software.pdf" class="btn btn-primary py-4 px-5">Download Resume</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            
+          </div>
+        </div>
+        <div class="row d-flex">
+
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end"   style="width: 100%; height: 100%;">
+              <div class="text mt-3 float-right d-block" style="width: 100%;">
+
+                <h3 class="heading"><a>Video Face Recognition using AWS Lambda (AWS PaaS)</a></h3>
+                <h4>Arizona State University</h4>
+            	<p>I engineered a scalable face recognition service on AWS Lambda, capable of processing over 100 videos. Utilizing a pre-trained ResNet-34 model, the system achieved 95% accuracy in face recognition and efficiently handled up to 50 concurrent video uploads with minimal latency.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end" style="width: 100%; height: 100%;">
+				<div class="text mt-3 float-right d-block" style="width: 100%;">
+
+					<h3 class="heading"><a>Elastic Image Recognition using AWS EC2 (AWS IaaS)</a></h3>
+					<h4>Arizona State University</h4>
+            		<p>Developed a scalable image recognition app on AWS with 95% accuracy, handling over 10,000 image requests efficiently. Optimized resource usage, reducing costs by 30%, and maintained high availability with rapid processing using EC2, S3, and SQS.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end" style="width: 100%; height: 100%;">
+				<div class="text mt-3 float-right d-block" style="width: 100%;">
+
+					<h3 class="heading"><a href="https://github.com/yashraj1305/Multi-Media-Personalized-Recommendation-System-Leveraging-User-Preferences-and-History">Multi-Media Personalized Recommendation System</a></h3>
+					<h4>Arizona State University</h4>
+            		<p>Led the development of a multimedia recommendation system, enhancing performance by 25% using BERT embeddings and achieving robust recommendations with an inter-list similarity of 0.833.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end" style="width: 100%; height: 100%;">
+				<div class="text mt-3 float-right d-block" style="width: 100%;">
+
+					<h3 class="heading"><a href="https://github.com/yashraj1305/quiz-application-spring-boot">Quiz Application using Spring Framework</a></h3>
+					<h4>Personal Project</h4>
+            		<p>Designed and developed a full-stack quiz application using Spring Boot for the backend and React for the frontend, enabling users to create, take, and review quizzes. Implemented secure authentication with JWT and optimized frontend-backend communication through RESTful APIs. Improved data retrieval performance by 250% by optimizing database queries and integrating Redis for caching frequently accessed data.</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end" style="width: 100%; height: 100%;">
+				<div class="text mt-3 float-right d-block" style="width: 100%;">
+
+					<h3 class="heading"><a href="https://github.com/yashraj1305/Churn-prediction">Churn Prediction in Telecom Industry</a></h3>
+					<h4>Pune University</h4>
+            		<p>Analyzed a dataset of 100,000 prepaid telecom customers, enhancing churn prediction accuracy to 94.19% by optimizing XG-Boost. Collaborated cross-functionally to deploy predictive models, resulting in effective churn mitigation strategies and revenue retention.</p>
+				</div>
+			</div>
+		</div>
+
+
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects 
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main">Sales Forecast- Time Series Forecasting</a></h3>
+				  <p>Used multiple machine learning models to forecast sales (retail store) and performed time series analysis.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb">Customer Segmentation using clustering model</a></h3>
+				  <p>Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div> -->
+
+	  <div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="https://github.com/yashraj1305" class="btn btn-primary py-4 px-5">View More on github</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://+1(623)">(623)241-3750</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:info@yoursite.com">ybharam1@asu.edu</a></p>
+	          </div>
+          </div>
+		<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+					<a href="https://www.linkedin.com/in/yashrajbharambe/">
+					<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4"><a href="https://www.linkedin.com/in/yashrajbharambe/">Linkedin</a></h3>
+	            <p><a href="https://www.linkedin.com/in/yashrajbharambe/">Yashraj linkedIn</a></p>
+	          </div>
+          </div>
+		 <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+					<a href="https://github.com/yashraj1305">
+					<span class="icon-map-signs"></span>
+          		</div>
+			<h3 class="mb-4" ><a href="https://github.com/yashraj1305">github</a></h3>
+	            <p><a href="https://github.com/yashraj1305">Yashraj github</a></p>
+          		
+	        
+	          </div>
+          </div>
+		
+          </div>
+
+ 
+	
+    
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
